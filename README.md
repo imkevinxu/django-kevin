@@ -32,6 +32,11 @@ Make virtual environments
     mkvirtualenv {{ project_name }}-prod && add2virtualenv `pwd`
     mkvirtualenv {{ project_name }}-test && add2virtualenv `pwd`
 
+Note: If you want to use Python 3: 
+
+- Use `mkvirtualenv --python=python3` instead `mkvirtualenv`. 
+- Update `runtime.txt` with `echo "python-3.4.3" > runtime.txt`
+
 Install python packages
 -----------------------
 
