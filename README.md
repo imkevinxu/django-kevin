@@ -102,9 +102,9 @@ Development Mode
 Set .env.dev variable for dev
 -----------------------------
 
-The environment variables for development sets the appropriate `DJANGO_SETTINGS_MODULE` and `PYTHONPATH` in order to use `django-admin.py` seemlessly. Necessary for Foreman and other worker processes
+The environment variables for development sets the appropriate `DJANGO_SETTINGS_MODULE` and `PYTHONPATH` in order to use `django-admin.py` seamlessly. Necessary for Foreman and other worker processes
 
-*`.env.dev` is not version controlled so the first person to create this project needs to create a `.env.dev` file for Foreman to read into the environment. Future collaboraters need to email the creator for it.*
+*`.env.dev` is not version controlled so the first person to create this project needs to create a `.env.dev` file for Foreman to read into the environment. Future collaborators need to email the creator for it.*
 
     echo DJANGO_SETTINGS_MODULE=config.settings.dev >> .env.dev
     echo PYTHONPATH={{ project_name }} >> .env.dev
@@ -163,9 +163,9 @@ Production Mode
 Set .env variable for prod
 --------------------------
 
-The environment variables for production must contain a separate `SECRET_KEY` for security and the appropriate `DJANGO_SETTINGS_MODULE` and `PYTHONPATH` in order to use `django-admin.py` seemlessly. Hacky use of `date | md5` to generate a pseudo-random string.
+The environment variables for production must contain a separate `SECRET_KEY` for security and the appropriate `DJANGO_SETTINGS_MODULE` and `PYTHONPATH` in order to use `django-admin.py` seamlessly. Hacky use of `date | md5` to generate a pseudo-random string.
 
-*`.env` is not version controlled so the first person to create this project needs to create a `.env` file for Foreman and Heroku to read into the environment. Future collaboraters need to email the creator for it.*
+*`.env` is not version controlled so the first person to create this project needs to create a `.env` file for Foreman and Heroku to read into the environment. Future collaborators need to email the creator for it.*
 
     echo -n SECRET_KEY=`date | md5` >> .env
     sleep 1
@@ -234,9 +234,9 @@ Testing Mode
 Set .env.test variable for test
 ------------------------------
 
-The environment variables for testing sets the appropriate `DJANGO_SETTINGS_MODULE` and `PYTHONPATH` in order to use `django-admin.py` seemlessly. Necessary for Foreman and other worker processes
+The environment variables for testing sets the appropriate `DJANGO_SETTINGS_MODULE` and `PYTHONPATH` in order to use `django-admin.py` seamlessly. Necessary for Foreman and other worker processes
 
-*`.env.test` is not version controlled so the first person to create this project needs to create a `.env.test` file for Foreman to read into the environment. Future collaboraters need to email the creator for it.*
+*`.env.test` is not version controlled so the first person to create this project needs to create a `.env.test` file for Foreman to read into the environment. Future collaborators need to email the creator for it.*
 
     echo DJANGO_SETTINGS_MODULE=config.settings.test >> .env.test
     echo PYTHONPATH={{ project_name }} >> .env.test
@@ -290,7 +290,7 @@ Scripts can be programmed to be run on the command-line using [Invoke](https://g
 
 Redis Cloud Caching
 -------------------
-In order to enable redis for caching and queues, add [Redis Cloud](https://devcenter.heroku.com/articles/rediscloud) to Heroku.
+In order to enable Redis for caching and queues, add [Redis Cloud](https://devcenter.heroku.com/articles/rediscloud) to Heroku.
 
     heroku addons:add rediscloud:25
 
@@ -387,7 +387,7 @@ Currently using [Django 1.8.4](https://docs.djangoproject.com/en/1.8/) for the a
 - [django-floppyforms 1.5.2](http://django-floppyforms.readthedocs.org/en/latest/) - Control of output of form rendering
 - [django-model-utils 2.3.1](https://django-model-utils.readthedocs.org/en/latest/) - Useful model mixins and utilities such as `TimeStampedModel` and `Choices`
 - [django-pipeline 1.5.4](http://django-pipeline.readthedocs.org/en/latest/) - CSS and JS compressor and compiler. Also minifies HTML
-- [django-redis 4.2.0](https://django-redis.readthedocs.org/en/latest/) - Enables redis caching
+- [django-redis 4.2.0](https://django-redis.readthedocs.org/en/latest/) - Enables Redis caching
 - [django-rq 0.8.0](https://github.com/ui/django-rq) - Django integration for RQ
 - [invoke 0.10.1](https://github.com/pyinvoke/invoke) - Python task execution in `tasks.py`
 - [logutils 0.3.3](https://pythonhosted.org/logutils/) - Nifty handlers for the Python standard library’s logging package
