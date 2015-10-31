@@ -195,6 +195,7 @@ After `post_compile` is successful, uncomment the line with the variable `STATIC
 
     git commit -am "Enabled django-pipeline"
     git push heroku master
+    heroku addons:create heroku-postgresql
     heroku run django-admin.py migrate
     heroku open
 
