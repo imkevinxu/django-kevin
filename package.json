@@ -17,7 +17,7 @@
     "grunt-autoprefixer": "^3.0.3",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-coffee": "^0.13.0",
-    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-contrib-imagemin": "^1.0.0",
     "grunt-contrib-jasmine": "^0.9.1",
     "grunt-sass": "^1.0.0",
     "grunt-template-jasmine-istanbul": "^0.3.4",
